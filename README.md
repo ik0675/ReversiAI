@@ -8,6 +8,6 @@ Using three tabs on terminal,
 
 
 # To-Do to improve
-• Make a board smaller at first and expend everytime (Expandable)
-• Make a board more weight around cornors (Currently, only weights on four cornors)
-• Quiescence search 
+[ ] Make a board smaller at first and expend everytime (Expandable)
+[ ] Make a board more weight around cornors (Currently, only weights on four cornors)
+[ ] Quiescence search 
