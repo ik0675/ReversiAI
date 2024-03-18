@@ -17,7 +17,9 @@ def minmax(game, depth, alpha, beta, is_max_player):
         for row, col in valid_moves:
             if game.board[row, col] == 0:
 
-                new_game = deepcopy(game) 
+                new_game = reversi()
+                new_game.turn = game.turn
+                new_game.board = game.board
                 new_game.put_stones(row, col, -game.turn)
 
                 opponent_moves = new_game.get_all_valid_moves(game.turn)
@@ -36,7 +38,9 @@ def minmax(game, depth, alpha, beta, is_max_player):
     for row, col in valid_moves:
         if game.board[row, col] == 0:
 
-            new_game = deepcopy(game)
+            new_game = reversi()
+            new_game.turn = game.turn
+            new_game.board = game.board
             new_game.put_stones(row, col, game.turn)
 
             opponent_moves = new_game.get_all_valid_moves(-game.turn)
@@ -59,7 +63,9 @@ def best_minmax_coordinators(game, turn):
     
     for row, col in valid_moves:
         if game.board[row, col] == 0:
-            new_game = deepcopy(game)
+            new_game = reversi()
+            new_game.turn = game.turn
+            new_game.board = game.board
             new_game.put_stones(row, col, turn)
             
             oppo_moves = new_game.get_all_valid_moves(-turn)
