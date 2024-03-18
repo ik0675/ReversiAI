@@ -1,5 +1,5 @@
 # ReversiAI
-Using a traditional method (min max with alpha beta pruning), I implemented Reversi algorithm to compete a local greedy algorithm.
+Using a traditional method (min max with alpha beta pruning with depth limit searching), I implemented Reversi algorithm to compete a local greedy algorithm.
 
 # Instruction
 Using three tabs on terminal,
@@ -8,6 +8,6 @@ Using three tabs on terminal,
 
 
 # To-Do to improve
-[ ] Make a board smaller at first and expend everytime (Expandable)
-[ ] Make a board more weight around cornors (Currently, only weights on four cornors)
+[ ] Make a board smaller at first and expend everytime (Expandable)<br/>
+[ ] Make a board more weight around cornors (Currently, only weights on four cornors)<br/>
 [ ] Quiescence search 
